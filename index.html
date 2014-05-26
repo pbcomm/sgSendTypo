@@ -8,6 +8,7 @@
 <body>
 
 <h3>Select text and press CTRL + Enter to send typo</h3>
+<h4>By binding to custom "sgSendTypo" event on "document.body" you can send selected text "event.detail.typo" to any service</h4>
 
 <p>
 In rhoncus, est, odio mauris sit nec enim elit, mattis dapibus vel facilisis, pulvinar sit? Pellentesque, rhoncus cum nec mid proin facilisis amet eros, sit integer porta tincidunt porta! Mid? Odio ridiculus! Lacus? Rhoncus nec habitasse. Cras adipiscing dapibus elementum! Nisi rhoncus in, dis tincidunt porta et nunc, cursus vel.
@@ -22,7 +23,7 @@ Diam! Tortor sed? Dictumst, aenean auctor mattis enim natoque? Vut, quis, rhoncu
 <script>
     var
         onSendTypo = function(e) {
-            console.log(e.detail.typo);
+            alert(e.detail.typo);
         };
 
     if (document.body.addEventListener) {
