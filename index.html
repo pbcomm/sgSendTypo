@@ -7,5 +7,29 @@
 </head>
 <body>
 
+<h3>Select text and press CTRL + Enter to send typo</h3>
+
+<p>
+In rhoncus, est, odio mauris sit nec enim elit, mattis dapibus vel facilisis, pulvinar sit? Pellentesque, rhoncus cum nec mid proin facilisis amet eros, sit integer porta tincidunt porta! Mid? Odio ridiculus! Lacus? Rhoncus nec habitasse. Cras adipiscing dapibus elementum! Nisi rhoncus in, dis tincidunt porta et nunc, cursus vel.
+</p>
+<p>
+Pulvinar tincidunt montes nec integer vel magna et tincidunt, sed! Penatibus urna, porttitor lacus mattis scelerisque a, est, lectus, aliquam proin? Porttitor. Pellentesque et magna dictumst duis, ac tempor et diam. Hac urna tincidunt porta elementum quis ultricies et! Pellentesque magna augue purus rhoncus, nec, vut dolor, porttitor est.
+</p>
+<p>
+Diam! Tortor sed? Dictumst, aenean auctor mattis enim natoque? Vut, quis, rhoncus nunc enim lectus non, tortor ac rhoncus, magna sed mattis sagittis aliquet montes. Porta aliquet! Magna? Sed cursus in, aliquet natoque sed! Et mid ut mauris pellentesque! Diam, dis integer et, phasellus scelerisque diam egestas turpis lundium.
+</p>
+
+<script>
+    var
+        onSendTypo = function(e) {
+            console.log(e.detail.typo);
+        };
+
+    if (document.body.addEventListener) {
+        document.body.addEventListener('sgSendTypo', onSendTypo, false);
+    } else if (document.body.attachEvent)  {
+        document.body.attachEvent('sgSendTypo', onSendTypo);
+    }
+</script>
 </body>
 </html>

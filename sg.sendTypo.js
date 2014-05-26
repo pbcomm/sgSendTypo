@@ -21,7 +21,8 @@
         },
 
         sendTypo = function(str) {
-            var event = new CustomEvent('sgSendTypo', { typo: str });
+            var event = doc.createEvent('CustomEvent');
+            event.initCustomEvent('sgSendTypo', true, true, { typo: String(str) });
             doc.body.dispatchEvent(event);
         },
 
